@@ -13,7 +13,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 # TOKEN = os.getenv("TOKEN")
 TOKEN = "1835028617:AAGdlp6QklI0c7XfXxq9gAd0zIZU708FbC4"
 main_channel = -1001208594988
-CHANNELS = -1001208594988
+CHANNELS = -1001296393536
 
 app = Client(
     "my_account",
