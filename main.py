@@ -12,8 +12,8 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 # TOKEN = os.getenv("TOKEN")
 TOKEN = "1835028617:AAGdlp6QklI0c7XfXxq9gAd0zIZU708FbC4"
-main_channel = -1001452061786
-CHANNELS = [-1001296393536, -1001208594988]
+main_channel = -1001208594988
+CHANNELS = -1001208594988
 
 app = Client(
     "my_account",
@@ -30,8 +30,7 @@ def start(client, message):
 @app.on_message(filters.text | filters.photo | filters.document)
 def main(client, message):
     if message.chat.id == main_channel:
-        for channelID in CHANNELS:
-            app.copy_message(channelID, main_channel, message.message_id)
+            app.copy_message(CHANNELS, main_channel, message.message_id)
 
 app.add_handler(handlers.MessageHandler(start, filters.command(
     ["start", "help"]) & filters.private))
