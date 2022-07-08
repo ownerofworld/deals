@@ -11,7 +11,7 @@ LOGGER = logging.getLogger(__name__)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 # TOKEN = os.getenv("TOKEN")
-TOKEN = "1835028617:AAGdlp6QklI0c7XfXxq9gAd0zIZU708FbC4"
+TOKEN = "5386670063:AAEM8nOGZqJ7N7OkUGoNP9o-xiftgQhGux8"
 main_channel = -1001208594988
 
 # -1001296393536
