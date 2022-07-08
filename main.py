@@ -36,7 +36,8 @@ def start(client, message):
 def main(client, message):
     if message.chat.id == main_channel:
             for channel in CHANNELS:
-            	app.copy_message(channel, main_channel, message.message_id)
+                print(message)
+            	app.copy_message(channel, main_channel, message.id)
 
 app.add_handler(handlers.MessageHandler(start, filters.command(
     ["start", "help"]) & filters.private))
