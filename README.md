@@ -20,10 +20,10 @@ This bot can help manage deal sharing across multiple groups or channels, saving
 ### Steps to Set Up
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/ownerofworld/deals
-   cd deals
-   ```
+```bash
+git clone https://github.com/ownerofworld/deals
+cd deals
+```
 2: Install dependencies:
 
 ```bash
